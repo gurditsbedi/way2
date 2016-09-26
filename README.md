@@ -6,13 +6,13 @@ way2 is a command line tool(Unofficial) to send sms to any Indian Mobile Number.
 
 1. Register at way2sms. This will give you your account details. Only your registered mobile number and password is required.
 
-2.  Install way2, git clone this repository or download the zip file of the repository. Upon completion. Go into the diretory and execute `python setup.py install`. This will install the way2 to command line tool.
+2.  Install way2, git clone this repository or download the zip file of the repository. Upon completion. Go into the diretory and execute `python setup.py install`.
 
 3. To send a message type in the terminal 
 `way2 -u Mobile-Number -p password -t receivers-number -m "your message"`
 You get a confirmation message on success.
 
-NOTE: There is limit on length of the sms according to the website which is 140 characters. The message you send is truncated to 140 chars and then it is send.
+NOTE: There is limit on length of the sms according to the website which is 140 characters. The message you send is truncated to first 140 chars and then it is send.
 
 #Example
 
@@ -27,14 +27,14 @@ alias way2me='way2 -u 987XXXXXXX -p password -t 987XXXXXXX'
 ```
 
 
-* `way2up`: In this one you have your mobile number and password stored just you have to provide reciever number and message.
-* `way2me`: In this one you send message to yourself.
+* `way2up`: In this one you have your mobile number and password stored just you have to provide receiver number and message. Now use as `way2up -t 801XXXXXXX -m "Message to be send"` .
+* `way2me`: In this one you send message to yourself. Now use as `way2me -m "Message to be send"` .
 
 #Issues
 
-* In India you are only allowed to send 100 sms per day per user, so the condition also applies here. This tool does not detect how many messages you have send on a day, so when you try send message after crossing this limit it will give positive reponse.
+* In India you are only allowed to send 100 sms per day per user, so the condition also applies here. This tool does not detect how many messages you have send on a day.
 
-* When you cross the Indian daily sms limit, instead of giving negative respose will give positive response.
+* When you cross the Indian daily sms limit, instead of giving negative response will give positive response.
 
 #Privacy
 
