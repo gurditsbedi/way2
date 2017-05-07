@@ -1,8 +1,8 @@
-#way2
+# way2
 
 way2 is a command line tool(Unofficial) to send sms to any Indian Mobile Number.
 
-#How-to
+# How-to
 
 1. Register at way2sms. This will give you your account details. Only your registered mobile number and password is required.
 
@@ -14,11 +14,11 @@ You get a confirmation message on success.
 
 NOTE: There is limit on length of the sms according to the website which is 140 characters. The message you send is truncated to first 140 chars and then it is send.
 
-#Example
+# Example
 
 `way2 -u 987XXXXXXX -p password -t 801XXXXXXX -m "Hey, Where are you?"`
 
-#Aliasing for shell users
+# Aliasing for shell users
 
 If you are on a platform which has bash, zsh etc you would like to alias, because its too much typing for too less. Just and this following lines to your `~/.bash_aliases` in case of bash and you get `way2up` and `way2me ` commands.
 ```
@@ -30,21 +30,21 @@ alias way2me='way2 -u 987XXXXXXX -p password -t 987XXXXXXX'
 * `way2up`: In this one you have your mobile number and password stored just you have to provide receiver number and message. Now use as `way2up -t 801XXXXXXX -m "Message to be send"` .
 * `way2me`: In this one you send message to yourself. Now use as `way2me -m "Message to be send"` .
 
-#Issues
+# Issues
 
 * In India you are only allowed to send 100 sms per day per user, so the condition also applies here. This tool does not detect how many messages you have send on a day.
 
 * When you cross the Indian daily sms limit, instead of giving negative response will give positive response.
 
-#Privacy
+# Privacy
 
 * The tool does not record an data such as mobile number, password or message. As the app is open-source you can review all of its code on GitHub to make sure it’s not logging or transmitting data somewhere.
 
-#License
+# License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Gurdit Singh Bedi
+Copyright (c) 2017 Gurdit Singh Bedi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
